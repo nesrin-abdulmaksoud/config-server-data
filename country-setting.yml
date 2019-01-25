@@ -1,2 +1,6 @@
 server:
   port: 7011
+spring:
+  jpa:
+    show:
+      sql=true
