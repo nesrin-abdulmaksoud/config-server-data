@@ -1,4 +1,13 @@
 spring:
+  cache:
+    ehcache:
+      config: ehcache.xml
   jpa:
-    show:
-      sql=true
+    show-sql: true
+setting:
+  chache:
+    duration:
+      type:
+        - SECONDS
+      duration:
+        - 30
