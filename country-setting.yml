@@ -2,7 +2,7 @@
 spring:
   cache:
     ehcache:
-      config: "classpath:ehcache.xml"
+      config: classpath:ehcache.xml
   jpa:
     show-sql: true
 setting:
