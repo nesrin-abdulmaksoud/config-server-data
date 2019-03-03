@@ -10,3 +10,9 @@ setting:
     duration:
       type: SECONDS
       time: 30
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
