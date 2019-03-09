@@ -1,0 +1,17 @@
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache3.xml
+  jpa:
+    show-sql: true
+setting:
+  chache:
+    duration:
+      type: SECONDS
+      time: 30
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
