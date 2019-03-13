@@ -30,8 +30,8 @@ spring:
     password: postgres
     url: jdbc:postgresql://localhost:5432/postgres
     driver-class-name: org.postgresql.Driver
- 
-    cache:
+# Cache properties
+  cache:
     jcache:
       config: classpath:ehcache3.xml
 setting:
@@ -39,6 +39,7 @@ setting:
     duration:
       type: SECONDS
       time: 30
+# expose all endpoints in actiuator      
 management:
   endpoints:
     web:
