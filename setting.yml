@@ -34,8 +34,6 @@ spring:
     cache:
     jcache:
       config: classpath:ehcache3.xml
-  jpa:
-    show-sql: true
 setting:
   chache:
     duration:
