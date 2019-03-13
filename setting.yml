@@ -1,5 +1,37 @@
+---
+# Testing Profile
 spring:
-  cache:
+  profiles: test
+  h2:
+    console:
+      path: /h2-test
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    name: testdb    
+---
+#Default profile
+
+spring:
+  jpa:
+    show-sql: true
+    # to avoid : java.sql.SQLFeatureNotSupportedException: 
+    # Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    driver-class-name: org.postgresql.Driver
+ 
+    cache:
     jcache:
       config: classpath:ehcache3.xml
   jpa:
@@ -15,3 +47,4 @@ management:
       exposure:
         include:
         - "*"
+        
