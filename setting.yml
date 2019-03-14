@@ -13,7 +13,7 @@ spring:
 #Production profile
 
 spring:
-profiles: prod
+  profiles: prod
   jpa:
     show-sql: true
     # to avoid : java.sql.SQLFeatureNotSupportedException: 
