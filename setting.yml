@@ -37,10 +37,11 @@ server:
 
 ---  
 # Cache properties
- spring:
+spring:
   cache:
     jcache:
-      config: classpath:ehcache3.xmlsetting:
+      config: classpath:ehcache3.xml
+setting:
   chache:
     duration:
       type: SECONDS
