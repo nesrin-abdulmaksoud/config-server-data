@@ -10,9 +10,10 @@ spring:
     driver-class-name: org.h2.Driver
     name: testdb    
 ---
-#Default profile
+#Production profile
 
 spring:
+profiles: prod
   jpa:
     show-sql: true
     # to avoid : java.sql.SQLFeatureNotSupportedException: 
@@ -34,6 +35,8 @@ spring:
   cache:
     jcache:
       config: classpath:ehcache3.xml
+server:
+  port: 7011
 setting:
   chache:
     duration:
