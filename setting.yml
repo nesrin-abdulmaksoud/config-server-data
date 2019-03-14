@@ -37,6 +37,8 @@ spring:
       config: classpath:ehcache3.xml
 server:
   port: 7011
+
+---  
 setting:
   chache:
     duration:
