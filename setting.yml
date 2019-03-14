@@ -31,15 +31,16 @@ spring:
     password: postgres
     url: jdbc:postgresql://localhost:5432/postgres
     driver-class-name: org.postgresql.Driver
-# Cache properties
-  cache:
-    jcache:
-      config: classpath:ehcache3.xml
+
 server:
   port: 7011
 
 ---  
-setting:
+# Cache properties
+ spring:
+  cache:
+    jcache:
+      config: classpath:ehcache3.xmlsetting:
   chache:
     duration:
       type: SECONDS
